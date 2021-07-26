@@ -9,6 +9,7 @@ services:
         environment:
             MAX_PHP_PROCESS: "50"
             NGINX_PROCESS: "2"
+            NGINX_HOME: /var/www/html
         ports:
             - "8080:80"
         restart: always

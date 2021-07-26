@@ -29,3 +29,7 @@ docker run -it -p 80:80 -v /path/to/www:/var/www/html \
                         --memory="300m" \
                         jarzamendia/php:7-fpm
 ```
+
+## TIP
+
+docker run --rm --interactive --tty --volume $PWD:/app composer create-project laravel/laravel example-app
