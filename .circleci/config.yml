@@ -4,7 +4,7 @@ executors:
 
   docker-publisher:
     environment:
-      IMAGE_NAME: jarzamendia/php:7-fpm
+      IMAGE_NAME: jarzamendia/php
     docker:
       - image: circleci/buildpack-deps:stretch
 
