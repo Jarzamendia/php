@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+
+    php:
+        image: jarzamendia/php:7-fpm
+        volumes:
+            - ./example:/var/www/html/
+        environment:
+            MAX_PHP_PROCESS: 50
+            NGINX_PROCESS: 2
+        ports:
+            - "8080:80"
+        restart: always
