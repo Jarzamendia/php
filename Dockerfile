@@ -4,6 +4,7 @@ FROM alpine:3.13
 ENV S6_OVERLAY_VERSION "2.2.0.3"
 ENV MAX_PHP_PROCESS=50
 ENV NGINX_PROCESS="2"
+ENV NGINX_HOME="/var/www/html/"
 
 # Instalando dependencias de SO e nginx
 RUN apk add --no-cache nginx wget ca-certificates mysql-client msmtp \
